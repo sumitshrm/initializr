@@ -21,7 +21,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     <div class="container-fluid">
         <div class="row start-header">
             <div class="container">
-                <h1>Spring Initializr <small>bootstrap your application now</small></h1>
+                <h1>Predix Spring Initializr <small>bootstrap your application now</small></h1>
             </div>
         </div>
         <div class="container start-main">
@@ -107,6 +107,49 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                         </select>
                     </div>
                 </div>
+                
+                <div class="col-sm-12 col-md-6">
+                <h2>Archetype</h2>
+                
+                <div class="form-group full hidden javaversion-form-group">
+                        <label for="javaVersion" class="control-label">{{javaVersions.title}}</label>
+                        <select tabindex="10" class="form-control" name="javaVersion" id="javaVersion">
+                            {{#javaVersions.content}}
+                            <option value="{{id}}"{{#default}} selected{{/default}}>{{name}}</option>
+                            {{/javaVersions.content}}
+                        </select>
+                    </div>
+                <!-- <select tabindex="1" class="form-control" id="archetype" name="archetype">
+                            
+                             <option value="default">default</option>
+                            <option value="pdx-microservice">pdx-microservice</option>
+                            <option value="pdx-alert-eventhub-subscriber">pdx-alert-eventhub-subscriber</option>
+                            <option value="pdx-timeseries-eventhub-subscriber">pdx-timeseries-eventhub-subscriber</option>
+                             
+                             
+                             <option value="CUSTOM">Blank Project</option>
+                            <option value="LIBRARY">Library</option>
+                            <option value="NOTHING">---------</option>
+                            <option value="MICRO">Microservice</option>
+                            <option value="MICRO_RABBIT">Microservice (Rabbit)</option>
+                            <option value="MICRO_KAFKA">Microservice (Kafka)</option>
+                            <option value="NOTHING">---------</option>
+                            <option value="APP_WEB_DATA">App Module (Web/Data)</option>
+                             
+                        </select>-->
+                        
+                         <select id="archetype" name="archetype"  class="form-control">
+                            <option value="default">default</option>
+                            <option value="pdx-microservice">pdx-microservice</option>
+                            <option value="pdx-alert-eventhub-subscriber">pdx-alert-eventhub-subscriber</option>
+                            <option value="pdx-timeseries-eventhub-subscriber">pdx-timeseries-eventhub-subscriber</option>
+                            <option value="MICRO">Microservice</option>
+                        </select>
+                        
+                </div>
+                
+                
+                
                 <div class="col-sm-12 col-md-6">
                     <h2>Dependencies</h2>
 

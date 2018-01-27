@@ -31,6 +31,7 @@ public class BasicProjectRequest {
 
 	private List<String> style = new ArrayList<>();
 	private List<String> dependencies = new ArrayList<>();
+	private String archetype;
 	private String name;
 	private String type;
 	private String description;
@@ -109,6 +110,14 @@ public class BasicProjectRequest {
 
 	public void setVersion(String version) {
 		this.version = version;
+	}
+
+	public String getArchetype() {
+		return archetype;
+	}
+
+	public void setArchetype(String archetype) {
+		this.archetype = archetype;
 	}
 
 	public String getBootVersion() {
